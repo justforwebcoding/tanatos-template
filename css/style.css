@@ -181,3 +181,232 @@ a {
     height: 33px;
     background: url('../img/intro/arrow.png');
 }
+
+/*------SERVICES------*/
+
+.services {
+    text-align: center;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+    padding: 100px 0px 70px 0px;
+}
+
+.services-list__item {
+    width: 180px;
+    height: 310px;
+    
+}
+
+.services-list__icon {
+    width: 155px;
+    height: 150px;
+
+    border: 1px solid #65696d;
+    border-radius: 50%;
+
+    margin: 0 auto;
+}
+
+.services-list__icon img {
+    padding-top: 40px;
+}
+
+.services-list__office {
+    margin: 30px 0px 20px 0px;
+
+    text-transform: uppercase;
+    line-height: 40px;
+    font: 16px "OpenSans-Semibold", sans-serif;
+}
+
+.services-list__info {
+    line-height: 26px;
+    font: 14px "OpenSans", sans-serif;
+    color: #65696d;
+}
+
+/*------SUBSCRIPTION------*/
+
+.subscription {
+    background: url("../img/subscription.jpg") 50% 0 no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    text-align: center;
+}
+
+.subscription-form {
+    margin: 100px 0px 100px 0px;
+}
+
+.subscription-form__input {
+    width: 565px;
+    height: 50px;
+
+    margin-right: 45px;
+    border-radius: 10px;
+    padding-left: 25px;
+
+    outline: none;
+    border: 1px solid #fff;
+
+    line-height: 40px;
+    font: 16px "OpenSans-Light", sans-serif;
+}
+
+.subscription-form__button {
+    background-color: #f7600e;
+}
+
+
+/*------OUR-WORKS-----*/
+
+.our-works {
+    margin: 100px 0px 100px 0px;
+    text-align: center;
+}
+
+.our-works__title {
+    line-height: 40px;
+    text-transform: uppercase;
+
+    font: 35px "OpenSans-Semibold", sans-serif;
+
+    color: #3b434c;
+}
+
+.our-works__title span {
+    color: #f7600e;
+}
+
+.our-works__info {
+    margin: 30px 0px 100px 0px;
+
+    line-height: 30px;
+
+    font: 16px "OpenSans", sans-serif;
+
+    color: #65696d;
+}
+
+.our-works-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.our-works-list__item {
+    text-align: center;
+}
+
+.our-works-list__item:nth-child(4) {
+    margin-top: 25px;
+}
+
+.our-works-list__item:nth-child(5) {
+    margin-top: 25px;
+}
+
+.our-works-list__item:nth-child(6) {
+    margin-top: 25px;
+}
+
+.our-works__button {
+    margin-top: 100px;
+    color: #3b434c;
+}
+
+
+.our-works-list__item {
+    position: relative;
+}
+
+.our-works-list__item:hover .hover-block {
+    display: block;
+}
+
+.hover-block {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #f7600e;
+    color: #fff;
+    opacity: 0.9;
+
+    padding: 50px 30px 50px 30px;
+}
+
+.hover-block h3 {
+    line-height: 40px;
+    font: 25px "OpenSans-Semibold", sans-serif;
+
+    text-transform: uppercase;
+}
+
+.hover-block p {
+    margin: 30px 0px 50px 0px;
+    line-height: 26px;
+    font: 16px "OpenSans", sans-serif;
+}
+
+.our-works__show-project:hover {
+    color: #f7600e;
+    background-color: #fff;
+}
+
+
+/*-------SLIDER--------*/
+
+
+/*-------OUR-TEAM------*/
+
+/*-------SAY-HELLO------*/
+
+
+
+
+/*-------FOOTER-------*/
+.footer {
+    padding: 40px 0px 40px 0px;
+    background-color: #3b434c;
+    color: #fff;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-side img {
+    width: 78px;
+    height: 15px;
+
+}
+
+.footer__copyright {
+    line-height: 40px;
+    font: 16px "OpenSans", sans-serif;
+}
+
+.footer__designed {
+    line-height: 40px;
+    font: 16px "OpenSans", sans-serif;
+
+    margin-right: 5px;
+}
