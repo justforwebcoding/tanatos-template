@@ -8,6 +8,9 @@
 
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
+
+        <link rel="stylesheet" href="slick/slick.css">
+        <link rel="stylesheet" href="slick/slick-theme.css">
         <title>Tanatos Studio</title>
     </head>
     <body>
@@ -47,7 +50,7 @@
                     </li>
                     <li class="services-list__item">
                         <div class="services-list__icon">
-                            <img src="/img/services/web.png" alt="web design">
+                            <img src="img/services/web.png" alt="web design">
                         </div>
                         <h3 class="services-list__office">web design</h3>
                         <span class="services-list__info">Incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -55,14 +58,14 @@
                     </li>
                     <li class="services-list__item">
                         <div class="services-list__icon">
-                            <img src="/img/services/app.png" alt="app design">
+                            <img src="img/services/app.png" alt="app design">
                         </div>
                         <h3 class="services-list__office">app design</h3>
                         <span class="services-list__info">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</span>
                     </li>
                     <li class="services-list__item">
                         <div class="services-list__icon">
-                            <img src="/img/services/logo.png" alt="logo design">
+                            <img src="img/services/logo.png" alt="logo design">
                         </div>
                         <h3 class="services-list__office">logo design</h3>
                         <span class="services-list__info">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</span>
@@ -139,11 +142,35 @@
                 <a class="btn our-works__button" href="">show more</a>
             </div>
         </section>
-        <section class="slider"></section>
+        <section class="slider">
+            <div class="container">
+                <div class="slider_list">
+                    <div class="slider_list__item">
+                        <div></div>
+                        <p>These guys are incredible! I get my project in 10 days and it was awesome!<br>
+                            Very good service! Highly recommended!</p>
+                        <span>John Smith</span>
+                    </div>
+                    <div class="slider_list__item">
+                        <div></div>
+                        <p>These guys are incredible! I get my project in 10 days and it was awesome!<br>
+                            Very good service! Highly recommended!</p>
+                        <span>John Smith</span>
+                    </div>
+                    <div class="slider_list__item">
+                        <div></div>
+                        <p>These guys are incredible! I get my project in 10 days and it was awesome!<br>
+                            Very good service! Highly recommended!</p>
+                        <span>John Smith</span>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="our-team">
             <div class="container">
-                <h2 class="title our-team__title">our team</h2>
-                <p class="info our-team__info"></p>
+                <h2 class="title our-team__title">our <span>team</span></h2>
+                <p class="info our-team__info">Sed ut perspiciatis unde omnis iste natus error sit<br> voluptatem
+                    accusantium doloremque laudantium totam rem</p>
                 <ul class="our-team-list">
                     <li class="our-team-list__item">
                         <img src="" alt="">
@@ -187,21 +214,28 @@
         </section>
         <section class="say-hello">
             <div class="container">
-                <h2 class="title say-hello__title">our team</h2>
-                <p class="info say-hello__info"></p>
+                <h2 class="title say-hello__title">say <span>hello</span></h2>
+                <p class="info say-hello__info">Excepteur sint occaecat cupidatat non proident, sunt in culpa<br> qui
+                    officia deserunt mollit anim id est laborum</p>
                 <form class="say-hello-form" action="">
-                    <input class="say-hello-form__input" type="text">
-                    <input class="say-hello-form__input" type="text">
-                    <textarea class="say-hello-form__textarea" name="" id="" cols="30" rows="10"></textarea>
-                    <button class="btn say-hello-form__button">hire us</button>
+                    <div class="flex-container">
+                        <input class="say-hello-form__input" type="email" placeholder="Your email" name="email">
+                        <input class="say-hello-form__input" type="text" placeholder="Subject" name="subject">
+                    </div>
+                    <div class="flex-container">
+                        <input class="say-hello-form__input" type="text" placeholder="Your message" name="message">
+                    </div>
+                    <div class="flex-container">
+                        <button class="btn say-hello-form__button">hire us</button>
+                        <ul class="say-hello-social">
+                            <li class="say-hello-social__item"><a href="https://www.facebook.com"></a></li>
+                            <li class="say-hello-social__item"><a href="https://www.facebook.com"></a></li>
+                            <li class="say-hello-social__item"><a href="https://www.facebook.com"></a></li>
+                            <li class="say-hello-social__item"><a href="https://www.facebook.com"></a></li>
+                            <li class="say-hello-social__item"><a href="https://www.facebook.com"></a></li>
+                        </ul>
+                    </div>
                 </form>
-                <div class="say-hello-social">
-                    <a class="say-hello-social__item" href=""></a>
-                    <a class="say-hello-social__item" href=""></a>
-                    <a class="say-hello-social__item" href=""></a>
-                    <a class="say-hello-social__item" href=""></a>
-                    <a class="say-hello-social__item" href=""></a>
-                </div>
             </div>
         </section>
         <footer class="footer">
@@ -215,5 +249,15 @@
                 </div>
             </div>
         </footer>
+
+
+        <!--Slick slider-->
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+
+        <script type="text/javascript">
+            $('.slider_list').slick();
+        </script>
     </body>
 </html>
